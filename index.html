@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nano Banana — The Future of Freshness</title>
+  <meta name="description" content="Cold-pressed, 100% natural juices and premium dairy-free shakes meticulously crafted to fuel a vibrant lifestyle. Experience peak freshness today.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Premium Sticky Glassmorphic Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo" id="logoLink">
+        <svg class="logo-icon" viewBox="0 0 24 24" width="28" height="28" stroke="#f97316" stroke-width="2.5" fill="#f97316" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        <span class="logo-text">Nano Banana</span>
+      </a>
+      <button class="btn-nav-order" id="navOrderBtn">
+        <span>Order Now</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Side Navigation Arrows (Desktop Only) -->
+  <button class="nav-arrow nav-arrow-left" id="prevArrow" aria-label="Previous Flavor">
+    <svg class="arrow-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </button>
+  <button class="nav-arrow nav-arrow-right" id="nextArrow" aria-label="Next Flavor">
+    <svg class="arrow-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </button>
+
+  <!-- Main Scroll Showcase (Video Scrub) -->
+  <div class="scroll-container" id="scrollContainer">
+    <div class="sticky-wrapper">
+      <video
+        id="showcaseVideo"
+        class="bg-video"
+        preload="auto"
+        muted
+        playsinline
+      ></video>
+      
+      <!-- Video Scrubbing Narrative Text Panels -->
+      <div class="overlay-container">
+        <!-- Panel 1 -->
+        <div class="text-panel" id="panel-1">
+          <h2 class="panel-title" id="panel-1-title">Cream Mango.</h2>
+          <p class="panel-subtitle" id="panel-1-subtitle">Pure sunshine.</p>
+        </div>
+        
+        <!-- Panel 2 -->
+        <div class="text-panel" id="panel-2">
+          <h2 class="panel-title" id="panel-2-title">Bursting with fresh mango.</h2>
+          <p class="panel-subtitle" id="panel-2-subtitle">Hand-picked Alphonso mangoes, perfectly ripened under the summer sun.</p>
+        </div>
+        
+        <!-- Panel 3 -->
+        <div class="text-panel" id="panel-3">
+          <h2 class="panel-title" id="panel-3-title">Vitamin-packed refreshment.</h2>
+          <p class="panel-subtitle" id="panel-3-subtitle">A natural energy boost that revitalizes your body and mind instantly.</p>
+        </div>
+        
+        <!-- Panel 4 -->
+        <div class="text-panel" id="panel-4">
+          <h2 class="panel-title" id="panel-4-title">Made from fruit, not concentrate.</h2>
+          <p class="panel-subtitle" id="panel-4-subtitle"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Product Content Wrapper -->
+  <div class="product-content-wrapper" id="productContentWrapper">
+    
+    <!-- Product Details Section -->
+    <section class="details-section" id="detailsSection">
+      <!-- Ambient Theme Glow Blob -->
+      <div class="details-blob" id="themeBlob"></div>
+      
+      <div class="details-grid">
+        <!-- Left Column: Marketing Content & Live Stats -->
+        <div class="details-col-left">
+          <h3 class="details-title" id="detailsTitle">The King of Fruits</h3>
+          <p class="details-description" id="detailsDesc">
+            Our Cream Mango juice uses only the finest Ratnagiri Alphonso mangoes. Cold-pressed within hours of harvest to preserve every drop of nutrient-rich goodness.
+          </p>
+          
+          <div class="details-stats" id="statsContainer">
+            <!-- Rendered Dynamically -->
+            <div class="stat-box">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Pulp</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-value">0g</span>
+              <span class="stat-label">Sugar</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-value">0%</span>
+              <span class="stat-label">Water</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Freshness Guarantee & Features -->
+        <div class="details-col-right">
+          <div>
+            <h3 class="details-title" id="freshnessTitle">Farm to Bottle</h3>
+            <p class="details-description" id="freshnessDesc">
+              We believe in absolute transparency. From the orchard to the bottle, our process is designed to minimize oxidation and maximize flavor.
+            </p>
+          </div>
+          
+          <div class="features-box">
+            <h4 class="features-title">Why Nano Banana?</h4>
+            <ul class="features-list" id="featuresList">
+              <!-- Rendered Dynamically -->
+              <li class="feature-item">
+                <div class="feature-dot"></div>
+                <span>Rich in Vitamin C</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buy Now Card Section -->
+    <section class="buy-now-section">
+      <div class="buy-card">
+        <div class="buy-content">
+          <h2 class="buy-card-title">Experience the Freshness</h2>
+          
+          <div class="price-container">
+            <span class="price-val" id="buyPrice">₹120</span>
+            <span class="price-unit" id="buyUnit">per 300ml bottle</span>
+          </div>
+          
+          <div class="params-wrapper" id="badgesWrapper">
+            <!-- Rendered Dynamically -->
+            <span class="param-badge">Cold Pressed</span>
+          </div>
+          
+          <button class="btn-buy" id="addToCartBtn">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Add to Cart
+          </button>
+          
+          <!-- Trust Badges Grid -->
+          <div class="buy-trust-grid">
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+              <div>
+                <h4 class="trust-title">Fast Delivery</h4>
+                <p class="trust-desc" id="deliveryPromise">
+                  Next-day delivery available in metro cities. Chilled packaging ensures peak freshness.
+                </p>
+              </div>
+            </div>
+            
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <div>
+                <h4 class="trust-title">Quality Guarantee</h4>
+                <p class="trust-desc" id="returnPolicy">
+                  100% Satisfaction Guarantee. Not happy? We'll replace it, no questions asked.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Continue Flavor Trigger Button -->
+    <div class="next-flavor-trigger">
+      <button class="btn-next-flavor" id="continueBtn">
+        <div class="next-flavor-content">
+          <span class="next-flavor-label">Continue Journey</span>
+          <span class="next-flavor-name" id="continueName">Try Dutch Chocolate</span>
+        </div>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Bottom Floating Pill Navigation Menu -->
+  <div class="bottom-pill-nav" id="bottomPillNav">
+    <!-- Rendered Dynamically -->
+  </div>
+
+  <!-- Premium Brands & Support Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Brand Description -->
+        <div class="footer-col-brand">
+          <h2 class="footer-brand-title">Nano Banana</h2>
+          <p class="footer-brand-desc">
+            The future of freshness. Cold-pressed, 100% natural, and meticulously crafted for a vibrant life.
+          </p>
+        </div>
+        
+        <!-- Shop Categories -->
+        <div class="footer-col-links">
+          <h3>Shop</h3>
+          <ul class="footer-links-list">
+            <li><a href="#" class="footer-link">Cream Mango</a></li>
+            <li><a href="#" class="footer-link">Dutch Chocolate</a></li>
+            <li><a href="#" class="footer-link">Ruby Pomegranate</a></li>
+            <li><a href="#" class="footer-link">Mixed Packs</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support Policies -->
+        <div class="footer-col-links">
+          <h3>Support</h3>
+          <ul class="footer-links-list">
+            <li><a href="#" class="footer-link">FAQ</a></li>
+            <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+            <li><a href="#" class="footer-link">Contact Us</a></li>
+            <li><a href="#" class="footer-link">Track Order</a></li>
+          </ul>
+        </div>
+        
+        <!-- Newsletter Signup -->
+        <div class="footer-col-newsletter">
+          <h3>Stay Fresh</h3>
+          <p class="newsletter-desc">
+            Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed! Welcome to the squad.');">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+            <button type="submit" class="btn-newsletter">Join</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Footer Copyright Disclaimer -->
+      <div class="footer-bottom">
+        <p id="copyrightText">&copy; 2026 Nano Banana. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          <a href="#" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
